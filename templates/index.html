@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image caption Generation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-light bg-light">
+        <h1 class="mx-auto text-center" >Image Caption Generation using Deep Learning</h1>
+    </nav>
+    
+    
+    <div  class="container text-center" id="imageCaption" style="border: 4px solid rgb(145, 144, 144);margin-top: 2em;border-radius:5px;width:50%;height:550px;color:white;" >
+        <br><br><h6 style="margin-top:5px; color: white;">Upload Image Here for Image caption Generation</h4>
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <div class="choosefile" style="display: inline-block;margin-top:5px;margin-bottom:5px"  >
+            <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+            <button type="submit" class="btn btn-outline-light" id="btn-predict">Predict</button>
+        </div>
+        </form>
+        <div class="image-section" style="display:none">
+            <div class="img-preview" >
+                <div id="imagePreview"></div>
+            </div>
+        </div>
+        <br><br>
+        <div class="loader"></div>
+        <h3 style="color:white;"><span id="result"></span></h3>
+        <br><br><br>
+               
+    </div>
+    
+     
+      <footer>
+        
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+     
+</footer>
+</body>
+</html>
