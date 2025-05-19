@@ -95,7 +95,8 @@ A Flask-based interface where users can upload an image and receive a generated 
 
 **Jyothula Bhaskar**  
 B.Tech in Computer Science & Engineering (AI & ML)  
-[LinkedIn](https://www.linkedin.com/in/bhaskar-jyothula-974bbb271/) | [Kaggle](https://www.kaggle.com/bhaskarjyothula)
+[LinkedIn](https://www.linkedin.com/in/bhaskar-jyothula-974bbb271/) | [Hugging Face](https://huggingface.co/Bhaskar2611) | [GitHub](https://github.com/Bhaskarjyothula) | [Kaggle](https://www.kaggle.com/bhaskarjyothula)
+
 
 ---
 
